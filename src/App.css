@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Original+Surfer&family=Philosopher:wght@400;700&display=swap');
+
+.ff_philosopher {
+  font-family: 'Philosopher';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ff_montserrat {
+  font-family: 'Montserrat';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ff_surfer {
+  font-family: 'Original Surfer';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero_section_bgimg {
+  background-image: url("./assets/img/png/header_bg_img.png");
 }
 
-.App-link {
-  color: #61dafb;
+.aboutus_bg_img {
+  background-image: url("./assets/img/png/about_us.png");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.express_delivery_bg_img {
+  background-image: url("./assets/img/png/express_delivery_bgimg.png");
+}
+
+.orders_bg_img {
+  background-image: url("./assets/img/png/orders_bg_img.png");
+}
+
+.pink_text_gredient {
+  background: linear-gradient(126.14deg, #AA1FFE 3.66%, #DD22E6 95.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.panda_bg {
+  position: absolute;
+  background: linear-gradient(180deg, #07031D 37.24%, rgba(7, 3, 29, 0.01) 88.23%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  width: 672px;
+  height: 420px;
+  bottom: -29%;
+  right: -25%;
+}
+
+.slick-dots {
+  bottom: -50px !important;
+}
+
+.slick-dots li button:before {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  content: '' !important;
+  background-color: #CF21ED !important;
+}
+
+.about_us_border::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3.5%;
+  height: 93%;
+  border-left: 4px solid #BA20F7;
+}
+
+.grid_img_1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.grid_img_2 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+.grid_img_3 {
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+
+.grid_img_4 {
+  grid-column: 2/3;
+  grid-row: 4/6;
+}
+
+.grid_img_5 {
+  grid-column: 3/4;
+  grid-row: 3/5;
+}
+
+.our_range_bg {
+  background: rgba(22, 15, 47, 0.5);
+}
+
+@media (min-width:1024px) {
+  .container {
+    max-width: 1140px !important;
   }
 }
